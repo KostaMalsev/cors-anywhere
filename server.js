@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = ['https://loocat.netlify.app','https://dnav.netlify.app','https://nav.doorstep.at'];
+var originWhitelist = ['https://loocat.netlify.app','https://dnav.netlify.app','https://nav.doorstep.at','http://127.0.0.1:3000'];
 
 function parseEnvList(env) {
   if (!env) {
