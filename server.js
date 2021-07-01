@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = ['https://scepter.berryscript.com'];
+var originWhitelist = ['https://scepter.berryscript.com', 'https://ushul.netlify.app', 'https://loocat.netlify.app','https://dnav.netlify.app','https://nav.doorstep.at','http://127.0.0.1:3000','https://testimportv2.netlify.app'];
 
 function parseEnvList(env) {
   if (!env) {
@@ -49,4 +49,3 @@ cors_proxy.createServer({
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
-
