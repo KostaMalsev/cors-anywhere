@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080;
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 var originWhitelist = ['https://scepter.berryscript.com', 'https://scepterdev.berryscript.com', 'https://codeit.codes', 'https://dev.codeit.codes', 'https://loocat.netlify.app','https://dnav.netlify.app','https://nav.doorstep.at','http://127.0.0.1:3000','https://testimportv2.netlify.app',
-'https://doornavdev.netlify.app/dispatcher'];
+'https://doornavdev.netlify.app/dispatcher', 'https://ushul.netlify.app'];
 
 function parseEnvList(env) {
   if (!env) {
